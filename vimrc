@@ -94,11 +94,23 @@ filetype indent on
 " let g:pymode_lint_config = '~/pylint.rc'
 " let g:pymode_rope_complete_on_dot = 0
 
+
+" Be smart when using tabs ;)
+set smarttab
+
 " 1 tab == 4 spaces
 set tabstop=4
 set shiftwidth=4
-set expandtab
-set autoindent
+set expandtab " Use spaces instead of tabs
+set foldmethod=indent
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+"
+colorscheme desert
+set background=dark
+
 
 map <F8> :r !pbpaste<CR>
 map <C-F8> :.w !pbcopy<CR><CR>
