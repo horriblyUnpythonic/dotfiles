@@ -75,9 +75,11 @@ syntax on
 colorscheme desert
 set background=dark
 
+set hlsearch
+
 hi LineNr ctermfg=DarkGrey
 hi Comment ctermfg=LightBlue
-hi Search cterm=NONE ctermbg=DarkGrey
+hi Search cterm=NONE ctermbg=DarkGrey ctermfg=LightGreen
 hi MatchParen ctermbg=DarkGrey
 hi Pmenu ctermbg=DarkGrey
 hi SpellBad ctermbg=DarkRed ctermfg=Green
