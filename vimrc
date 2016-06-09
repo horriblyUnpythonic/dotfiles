@@ -71,6 +71,10 @@ set number
 " syntax enable
 syntax on
 
+
+colorscheme desert
+set background=dark
+
 hi LineNr ctermfg=DarkGrey
 hi Comment ctermfg=LightBlue
 hi Search cterm=NONE ctermbg=DarkGrey
@@ -106,10 +110,6 @@ set foldmethod=indent
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-
-"
-colorscheme desert
-set background=dark
 
 
 map <F8> :r !pbpaste<CR>
