@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source ~/VirtualEnv/jupyter/bin/activate
+python -m cprofilev $1
+

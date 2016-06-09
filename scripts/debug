@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source ~/VirtualEnv/jupyter/bin/activate
+ipython -m pdb $1
