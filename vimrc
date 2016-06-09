@@ -67,7 +67,10 @@ nnoremap <C-]> v:<C-U>call Commentpython()<CR>
 vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
 set number
+" Enable syntax highlighting
+" syntax enable
 syntax on
+
 hi LineNr ctermfg=DarkGrey
 hi Comment ctermfg=LightBlue
 hi Search cterm=NONE ctermbg=DarkGrey
@@ -83,12 +86,15 @@ set spell spelllang=en_us
 
 nnoremap Q <nop>
 
-filetype indent plugin on
+filetype plugin on
+filetype indent on
+
 
 " Pylint configuration file
 " let g:pymode_lint_config = '~/pylint.rc'
 " let g:pymode_rope_complete_on_dot = 0
 
+" 1 tab == 4 spaces
 set tabstop=4
 set shiftwidth=4
 set expandtab
