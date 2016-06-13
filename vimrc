@@ -68,6 +68,7 @@ vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
 set number
 syntax on
+set hlsearch
 hi LineNr ctermfg=DarkGrey
 hi Comment ctermfg=LightBlue
 hi Search cterm=NONE ctermbg=DarkGrey
