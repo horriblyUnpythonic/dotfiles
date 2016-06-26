@@ -97,14 +97,17 @@ set autoindent
 
 map <F8> :r !pbpaste<CR>
 map <C-F8> :.w !pbcopy<CR><CR>
+map <leader>o :!cat % \| pbcopy<CR>
 map Z <C-w>+
 map Y y$
 
 map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
+map <leader>m iif __name__ == '__main__':<esc>jVG>
 map <leader>r :!python %<CR>
 map <leader>d :!debug %<CR>
 map <leader>p :!profile %<CR>
 map <leader>c :!git difftool %& git commit %<CR>
+
 
 imap ˙ <left>
 imap ∆ <down>
