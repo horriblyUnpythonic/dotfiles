@@ -67,11 +67,19 @@ nnoremap <C-]> v:<C-U>call Commentpython()<CR>
 vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
 set number
+" Enable syntax highlighting
+" syntax enable
 syntax on
+
+
+colorscheme desert
+set background=dark
+
 set hlsearch
+
 hi LineNr ctermfg=DarkGrey
 hi Comment ctermfg=LightBlue
-hi Search cterm=NONE ctermbg=DarkGrey
+hi Search cterm=NONE ctermbg=DarkGrey ctermfg=LightGreen
 hi MatchParen ctermbg=DarkGrey
 hi Pmenu ctermbg=DarkGrey
 hi SpellBad ctermbg=DarkRed ctermfg=Green
@@ -84,16 +92,27 @@ set spell spelllang=en_us
 
 nnoremap Q <nop>
 
-filetype indent plugin on
+filetype plugin on
+filetype indent on
+
 
 " Pylint configuration file
 " let g:pymode_lint_config = '~/pylint.rc'
 " let g:pymode_rope_complete_on_dot = 0
 
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
 set tabstop=4
 set shiftwidth=4
-set expandtab
-set autoindent
+set expandtab " Use spaces instead of tabs
+set foldmethod=indent
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
 
 map <F8> :r !pbpaste<CR>
 map <C-F8> :.w !pbcopy<CR><CR>
@@ -101,11 +120,16 @@ map <leader>o :!cat % \| pbcopy<CR>
 map Z <C-w>+
 map Y y$
 
+map ; "*
+
+
 map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
 map <leader>m iif __name__ == '__main__':<esc>jVG>
 map <leader>r :!python %<CR>
 map <leader>d :!debug %<CR>
-map <leader>p :!profile %<CR>
+nmap <leader>p :!profile %<CR>
+vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<CR><esc>'>opr.disable()<CR>pr.dump_stats('vimauto.profile')<CR><esc>
+nmap <leader>s :!python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt<CR>
 map <leader>c :!git difftool %& git commit %<CR>
 
 
