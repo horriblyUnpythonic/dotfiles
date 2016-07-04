@@ -3,16 +3,11 @@
 [difftool]
 	bc3 = trustExitCode
     prompt = false
-[difftool "bc3"]
-    cmd = \"/Applications/Beyond Compare.app/Contents/MacOS/bcomp\" $LOCAL $REMOTE
     
 [merge]
     tool = bc3
 [mergetool]
     prompt = false
-[mergetool "bc3"]
-    #trustExitCode = true
-    cmd = \"/Applications/Beyond Compare.app/Contents/MacOS/bcomp\" $LOCAL $REMOTE $BASE $MERGED
 [color]
 	diff = auto
 	status = auto
