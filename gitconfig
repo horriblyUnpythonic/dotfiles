@@ -17,3 +17,5 @@
 	diff = auto
 	status = auto
 	branch = auto
+[core]
+	excludesfile = /Users/brigrockwell/.gitignore_global
