@@ -118,6 +118,8 @@ map <F8> :r !pbpaste<CR>
 map <C-F8> :.w !pbcopy<CR><CR>
 map Z <C-w>+
 map Y y$
+map H <C-o>
+map L <C-i>
 
 map ; "*
 
