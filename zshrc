@@ -2,6 +2,10 @@ alias cdpy="cd ~/Manzama/PyApp"
 
 
 source ~/dotfiles/scripts/git-propmt.zsh 
+alias stats="python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt"
+
+SAVEHIST=100
+HISTFILE=~/.zsh_history
 
 setopt inc_append_history
 setopt share_history
