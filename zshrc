@@ -1,7 +1,7 @@
 alias cdpy="cd ~/Manzama/PyApp"
 
 
-source ~/dotfiles/scripts/git-propmt.zsh 
+source ~/dotfiles/scripts/git-prompt.zsh 
 alias stats="python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt"
 
 SAVEHIST=100
