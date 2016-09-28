@@ -1,0 +1,2 @@
+sort cumtime
+stats 10
