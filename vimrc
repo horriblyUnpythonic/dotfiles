@@ -66,6 +66,9 @@ endfunction
 nnoremap <C-]> v:<C-U>call Commentpython()<CR>
 vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set laststatus=2
+
 set number
 " Enable syntax highlighting
 " syntax enable
@@ -111,23 +114,22 @@ set expandtab " Use spaces instead of tabs
 set foldmethod=indent
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 map <F8> :r !pbpaste<CR>
 map <C-F8> :.w !pbcopy<CR><CR>
 map <leader>o :!cat % \| pbcopy<CR>
-map Z <C-w>+
+map Z <C-w>+<bar><C-w>>
 map Y y$
 map H <C-o>
 map L <C-i>
-
 map ; "*
 
 
 map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
 map <leader>m iif __name__ == '__main__':<esc>jVG>
-map <leader>r :!python %<CR>
+map <leader>r :w<CR>:!python %<CR>
 map <leader>d :!debug %<CR>
 nmap <leader>p :!profile %<CR>
 vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<CR><esc>'>opr.disable()<CR>pr.dump_stats('vimauto.profile')<CR><esc>
