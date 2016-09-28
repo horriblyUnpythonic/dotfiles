@@ -14,3 +14,6 @@
 	branch = auto
 [core]
 	excludesfile = /Users/brigrockwell/.gitignore_global
+[user]
+	name = brig
+	email = brig@manzama.com
