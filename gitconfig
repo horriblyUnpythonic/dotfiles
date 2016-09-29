@@ -19,7 +19,7 @@
 	status = auto
 	branch = auto
 [core]
-	excludesfile = /Users/brigrockwell/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = brig
-	email = brig@manzama.com
+	email = horriblyUnpythonic@users.noreply.github.com
