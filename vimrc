@@ -93,7 +93,7 @@ hi SpellLocal ctermbg=DarkGrey
 set spell spelllang=en_us
 
 
-nnoremap Q <nop>
+nnoremap Q 0yt=A<C-r>=<C-r>"<CR><Esc>
 
 filetype plugin on
 filetype indent on
@@ -111,10 +111,16 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 set expandtab " Use spaces instead of tabs
-set foldmethod=indent
 set ai "Auto indent
 set si "Smart indent
-set nowrap "Wrap lines
+
+set foldmethod=indent
+set foldlevelstart=10
+
+set wrap "Wrap lines
+set breakindent
+set showbreak=…
+set linebreak
 
 
 map <F8> :r !pbpaste<CR>
@@ -136,6 +142,9 @@ vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<C
 nmap <leader>s :!stats<CR>
 map <leader>c :!git difftool %& git commit %<CR>
 
+
+map <C-j> gj
+map <C-k> gk
 
 imap ˙ <left>
 imap ∆ <down>
