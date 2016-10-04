@@ -10,6 +10,8 @@ HISTFILE=~/.zsh_history
 setopt inc_append_history
 setopt share_history
 
+set -o vi
+
 # The next line updates PATH for the Google Cloud SDK.
 source ~/google-cloud-sdk/path.zsh.inc
 
