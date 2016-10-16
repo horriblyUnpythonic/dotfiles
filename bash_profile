@@ -2,6 +2,7 @@ export PATH="$PATH:~/dotfiles/scripts"
 
 alias jup="source ~/VirtualEnv/jupyter/bin/activate"
 alias cdcn="cd ~/Documents/school/Classes/Computer\ Networking"
+alias cdhi="cd ~/Documents/school/Classes/Health\ Informatics"
 
 alias ipnb="jupyter notebook --ip='*'"
 alias ipce="jupyter console --existing"
