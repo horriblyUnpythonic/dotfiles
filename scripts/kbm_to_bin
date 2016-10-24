@@ -1,0 +1,3 @@
+
+# to binary
+plutil -convert binary1 ~/dotfiles/keyboardmaestro.kmsync

@@ -1,0 +1,3 @@
+
+# to xml
+plutil -convert xml1 ~/dotfiles/keyboardmaestro.kmsync
