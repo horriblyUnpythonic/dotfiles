@@ -2,3 +2,4 @@
 vimauto.profile
 *.pyc
 Icon
+_extra_files/*
