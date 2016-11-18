@@ -25,4 +25,6 @@ source '/Users/brigrockwell/google-cloud-sdk/path.bash.inc'
 # The next line enables shell command completion for gcloud.
 source '/Users/brigrockwell/google-cloud-sdk/completion.bash.inc'
 
+alias ll="ls -hal"
+
 set -o vi
