@@ -139,6 +139,7 @@ map ; "*
 map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
 map <leader>m iif __name__ == '__main__':<esc>jVG>
 map <leader>r :w<CR>:!python %<CR>
+map <leader>t :w<CR>:silent !tmux split "ipython %"<CR>
 map <leader>d :!debug %<CR>
 nmap <leader>p :!profile %<CR>
 vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<CR><esc>'>opr.disable()<CR>pr.dump_stats('vimauto.profile')<CR><esc>
