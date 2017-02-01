@@ -1,0 +1,19 @@
+#!/bin/bash
+SESSION=$USER
+
+tmux -2 new-session -d -s $SESSION
+
+# Setup manzama user
+tmux new-window -t $SESSION:1 -n 'manzama' 'sudo su - manzama'
+
+# Setup django shell
+tmux new-window -t $SESSION:2 -n 'django' '/home/vagrant/manzama/website/manage.py shell'
+
+# Setup bash shell
+tmux new-window -t $SESSION:3 -n 'bash' 'sudo supervisorctl stop gunicorn'
+
+# Set default window
+tmux select-window -t $SESSION:3
+
+# Attach to session
+tmux -2 attach-session -t $SESSION
