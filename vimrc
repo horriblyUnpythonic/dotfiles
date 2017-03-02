@@ -68,6 +68,7 @@ vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
 let pythonpath = system("python -c \"from distutils import sysconfig; print(sysconfig.get_python_lib())\"")
 let &path = &path . "," . substitute(pythonpath, '\n$', ',', 'g')
+set path+=**
 
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
@@ -124,6 +125,8 @@ set wrap "Wrap lines
 set breakindent
 set showbreak=…
 set linebreak
+
+set wildmenu
 
 
 map <F8> :r !pbpaste<CR>

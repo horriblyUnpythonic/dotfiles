@@ -1,5 +1,6 @@
 .DS_Store
 vimauto.profile
 *.pyc
+*.swp
 Icon
 _extra_files/*
