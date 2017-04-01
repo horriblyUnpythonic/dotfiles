@@ -139,6 +139,9 @@ set breakindent
 set showbreak=…
 set linebreak
 
+set list
+set listchars=tab:>-,trail:•,extends:>,precedes:<
+
 set wildmenu
 
 
