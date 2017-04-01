@@ -1,10 +1,11 @@
 [diff]
-    tool = bc3
-[difftool]
-	bc3 = trustExitCode
-    prompt = false
-[difftool "bc3"]
-    cmd = \"/Applications/Beyond Compare.app/Contents/MacOS/bcomp\" $LOCAL $REMOTE
+    tool = vimdiff
+#     tool = bc3
+# [difftool]
+#     bc3 = trustExitCode
+#     prompt = false
+# [difftool "bc3"]
+#     cmd = \"/Applications/Beyond Compare.app/Contents/MacOS/bcomp\" $LOCAL $REMOTE
      
     
 [merge]
