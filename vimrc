@@ -164,7 +164,7 @@ map <leader>d :!debug %<CR>
 nmap <leader>p :!profile %<CR>
 vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<CR><esc>'>opr.disable()<CR>pr.dump_stats('vimauto.profile')<CR><esc>
 nmap <leader>s :!stats<CR>
-map <leader>c :!git difftool %& git commit %<CR>
+map <leader>c :!git difftool %; git commit %<CR>
 
 
 map <C-j> gj
