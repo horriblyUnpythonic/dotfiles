@@ -66,6 +66,19 @@ endfunction
 nnoremap <C-]> v:<C-U>call Commentpython()<CR>
 vnoremap <C-]> :<C-U>call Commentpython()<CR>
 
+" Swap tmux run map
+function! Swaptmuxrun()
+    let t = maparg('<leader>t')
+    if t =~ "-h"
+        echo "switch to vert"
+        map <leader>t :w<CR>:silent !tmux split -v "ipython -i %"<CR>
+    else
+        echo "switch to horz"
+        map <leader>t :w<CR>:silent !tmux split -h "ipython -i %"<CR>
+    endif
+endfunction
+
+
 let pythonpath = system("python -c \"from distutils import sysconfig; print(sysconfig.get_python_lib())\"")
 let &path = &path . "," . substitute(pythonpath, '\n$', ',', 'g')
 set path+=**
@@ -127,6 +140,9 @@ set showbreak=…
 set linebreak
 set listchars=tab:>-,trail:•,extends:>,precedes:<,nbsp:•
 
+set list
+set listchars=tab:>-,trail:•,extends:>,precedes:<
+
 set wildmenu
 
 
@@ -144,11 +160,12 @@ map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
 map <leader>m iif __name__ == '__main__':<esc>jVG>
 map <leader>r :w<CR>:!python %<CR>
 map <leader>t :w<CR>:silent !tmux split "ipython %"<CR>
+map <leader>T :call Swaptmuxrun()<CR>
 map <leader>d :!debug %<CR>
 nmap <leader>p :!profile %<CR>
 vmap <leader>p <esc>'<Oimport cProfile<CR>pr=cProfile.Profile()<CR>pr.enable()<CR><esc>'>opr.disable()<CR>pr.dump_stats('vimauto.profile')<CR><esc>
 nmap <leader>s :!stats<CR>
-map <leader>c :!git difftool %& git commit %<CR>
+map <leader>c :!git difftool %; git commit %<CR>
 
 
 map <C-j> gj
