@@ -125,6 +125,7 @@ set wrap "Wrap lines
 set breakindent
 set showbreak=…
 set linebreak
+set listchars=tab:>-,trail:•,extends:>,precedes:<,nbsp:•
 
 set wildmenu
 
