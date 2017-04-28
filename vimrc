@@ -140,7 +140,7 @@ set showbreak=…
 set linebreak
 
 set list
-set listchars=tab:>-,trail:•,extends:>,precedes:<
+set listchars=tab:>-,trail:•,extends:>,precedes:<,nbsp:•
 
 set wildmenu
 
