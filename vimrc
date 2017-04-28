@@ -175,6 +175,7 @@ imap ∆ <down>
 imap ˚ <up>
 imap ¬ <right>
 imap π <C-r>"
+imap <C-e> <C-o>$
 " :imap jj <Esc>
 " :imap kk <Esc>
 " :imap hh <Esc>
