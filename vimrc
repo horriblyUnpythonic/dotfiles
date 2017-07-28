@@ -168,6 +168,9 @@ nmap <leader>s 1z=
 map <leader>c :!git difftool %; git commit %<CR>
 
 
+map <C-b> v^xA
+imap <C-b> <Esc>v^xA
+
 map <C-j> gj
 map <C-k> gk
 
