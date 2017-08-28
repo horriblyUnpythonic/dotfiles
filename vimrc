@@ -158,7 +158,7 @@ map ; "*
 map <leader>b oimport pdb;pdb.set_trace()  # XXX Breakpoint<Esc>
 map <leader>m iif __name__ == '__main__':<esc>jVG>
 map <leader>r :w<CR>:!python %<CR>
-map <leader>t :w<CR>:silent !tmux split "ipython %"<CR>
+map <leader>t :w<CR>:silent !tmux split "ipython -i %"<CR>
 map <leader>T :call Swaptmuxrun()<CR>
 map <leader>d :!debug %<CR>
 nmap <leader>p :!profile %<CR>
