@@ -15,7 +15,7 @@ alias cndown="VBoxManage controlvm \"Computer Networks CS-6250\" acpipowerbutton
 
 alias stats="python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt"
 
-set -o vi
+# set -o vi
 alias gosh="ssh -i ~/.ssh/google_ssh_key blratbri@104.198.74.21"
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -26,4 +26,4 @@ source '/Users/brigrockwell/google-cloud-sdk/completion.bash.inc'
 
 alias ll="ls -hal"
 
-set -o vi
+# set -o vi

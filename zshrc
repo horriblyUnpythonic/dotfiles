@@ -11,7 +11,7 @@ HISTFILE=~/.zsh_history
 setopt inc_append_history
 setopt share_history
 
-set -o vi
+# set -o vi
 alias ll="ls -hal"
 
 # The next line updates PATH for the Google Cloud SDK.
