@@ -4,3 +4,4 @@ vimauto.profile
 *.swp
 Icon
 _extra_files/*
+.idea
