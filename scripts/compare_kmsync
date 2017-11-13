@@ -1,0 +1,10 @@
+cd ~/dotfiles
+mv keyboardmaestro.kmsync ~/Desktop/
+git checkout keyboardmaestro.kmsync
+mv keyboardmaestro.kmsync ~/Desktop/gitkmsync
+
+cp ~/Desktop/keyboardmaestro.kmsync .
+
+plutil -convert xml1 ~/Desktop/keyboardmaestro.kmsync
+plutil -convert xml1 ~/Desktop/gitkmsync
+
