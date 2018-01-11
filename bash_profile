@@ -1,7 +1,7 @@
 export PATH="$PATH:~/dotfiles/scripts"
 
 alias jup="source ~/VirtualEnv/jupyter/bin/activate"
-alias cdns="cd ~/Documents/school/Classes/network_security/"
+alias cdml="cd ~/Documents/school/Classes/trading_machine_learning/"
 
 alias ipnb="jupyter notebook --ip='*'"
 alias ipce="jupyter console --existing"
