@@ -8,3 +8,4 @@ cp ~/Desktop/keyboardmaestro.kmsync .
 plutil -convert xml1 ~/Desktop/keyboardmaestro.kmsync
 plutil -convert xml1 ~/Desktop/gitkmsync
 
+vimdiff ~/Desktop/keyboardmaestro.kmsync ~/Desktop/gitkmsync
