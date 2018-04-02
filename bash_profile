@@ -19,10 +19,10 @@ alias stats="python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt"
 alias gosh="ssh -i ~/.ssh/google_ssh_key blratbri@104.198.74.21"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/brigrockwell/google-cloud-sdk/path.bash.inc'
+if [ -f '~/Documents/code/google-cloud-sdk/path.bash.inc' ]; then source '~/Documents/code/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-source '/Users/brigrockwell/google-cloud-sdk/completion.bash.inc'
+if [ -f '~/Documents/code/google-cloud-sdk/completion.bash.inc' ]; then source '~/Documents/code/google-cloud-sdk/completion.bash.inc'; fi
 
 alias ll="ls -hal"
 
