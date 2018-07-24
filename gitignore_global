@@ -5,3 +5,4 @@ vimauto.profile
 Icon
 _extra_files/*
 .idea
+local_ignored/*
