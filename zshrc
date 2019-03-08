@@ -1,6 +1,11 @@
 alias cdpy="cd ~/Manzama/PyApp"
+alias cdrp="cd ~/Manzama/purgatory/report_builders/"
+alias jup="source ~/VirtualEnv/jupyter/bin/activate"
+alias ipython="python"
 
-export PATH=$PATH:/usr/local/bin
+alias sshgen="gcloud compute ssh p-w-general-a-7"
+
+export PATH="$PATH:~/dotfiles/scripts:/usr/local/bin:~/VirtualEnvs/bin"
 
 source ~/dotfiles/scripts/git-prompt.zsh 
 alias stats="python -m pstats vimauto.profile < ~/dotfiles/profile_helper.txt"
