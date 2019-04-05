@@ -2,6 +2,7 @@ export PATH="$PATH:~/dotfiles/scripts"
 
 alias jup="source ~/VirtualEnv/jupyter/bin/activate"
 alias cdml="cd ~/Documents/school/Classes/trading_machine_learning/"
+alias cdkl="cd ~/Music/Lyrics/Kelly/"
 
 alias ipnb="jupyter notebook --ip='*'"
 alias ipce="jupyter console --existing"
