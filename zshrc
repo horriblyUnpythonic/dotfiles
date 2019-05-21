@@ -4,6 +4,7 @@ alias jup="source ~/VirtualEnv/jupyter/bin/activate"
 alias ipython="python"
 
 alias sshgen="gcloud compute ssh p-w-general-a-7"
+alias sshvag="cdpy && vagrant ssh"
 
 export PATH="$PATH:~/dotfiles/scripts:/usr/local/bin:~/VirtualEnvs/bin"
 
