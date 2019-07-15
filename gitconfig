@@ -25,3 +25,5 @@
 [user]
 	name = brig
 	email = horriblyUnpythonic@users.noreply.github.com
+[http]
+	cookiefile = /Users/brigrockwell/.gitcookies
