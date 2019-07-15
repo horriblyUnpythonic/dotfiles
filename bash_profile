@@ -1,6 +1,7 @@
 export PATH="$PATH:~/dotfiles/scripts"
 
 alias jup="source ~/VirtualEnv/jupyter/bin/activate"
+alias mus="source ~/VirtualEnv/music/bin/activate"
 alias cdml="cd ~/Documents/school/Classes/trading_machine_learning/"
 alias cdkl="cd ~/Music/Lyrics/Kelly/"
 
