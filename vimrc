@@ -143,6 +143,7 @@ set list
 set listchars=tab:>-,trail:•,extends:>,precedes:<,nbsp:•
 
 set wildmenu
+set mouse-=a
 
 
 map <F8> :r !pbpaste<CR>
