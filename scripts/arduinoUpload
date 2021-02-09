@@ -1,0 +1,1 @@
+/Applications/Arduino.app/Contents/Java/hardware/tools/avr/bin/avrdude -C/Applications/Arduino.app/Contents/Java/hardware/tools/avr/etc/avrdude.conf -v -patmega328p -carduino -P/dev/cu.usbserial-1420 -b115200 -D -Uflash:w:/var/folders/n6/9t094qs95qgbc7tpgprm3zcc0000gn/T/arduino_build_201250/midimonitor.ino.hex:i 

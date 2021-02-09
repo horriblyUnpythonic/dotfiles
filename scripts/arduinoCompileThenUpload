@@ -1,0 +1,3 @@
+if ~/dotfiles/scripts/arduinocompile; then
+    ~/dotfiles/scripts/arduinoUpload
+fi
