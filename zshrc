@@ -8,6 +8,9 @@ alias sshgen="gcloud compute ssh p-w-general-a-7"
 alias sshdev="gcloud compute ssh p-web-dev-5"
 alias sshvag="cdpy && vagrant ssh"
 
+alias gostag="export CLOUDSDK_ACTIVE_CONFIG_NAME=secondconf"
+alias listvms="gcloud compute instance list"
+
 export PATH="$PATH:~/dotfiles/scripts:/usr/local/bin:~/VirtualEnvs/bin"
 
 source ~/dotfiles/scripts/git-prompt.zsh 
